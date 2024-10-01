@@ -1,0 +1,3 @@
+Żeby to zadziałało, to musicie utworzyć w PHPMyAdmin bazę "hackaton_test" i zaimportować do niej plik sql.
+Albo utworzyć bazę i po utworzeniu przejść do zakładki SQL, otworzyć plik w VSC albo notatniku i skopiować całą treść, a potem wykonać to zapytanie.
+Jak coś, to pytajcie :)

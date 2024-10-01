@@ -1,0 +1,222 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.app-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 24px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.header-icons {
+	display: flex;
+	gap: 20px;
+}
+
+.header-icon {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.habit-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.habit-item {
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	border-bottom: 1px solid #eee;
+}
+
+.habit-actions {
+	display: flex;
+	gap: 10px;
+	margin-right: 15px;
+}
+
+.habit-icon {
+	cursor: pointer;
+	font-size: 18px;
+	color: #666;
+}
+
+.habit-date {
+	font-size: 12px;
+	color: #666;
+	margin-right: 15px;
+	min-width: 80px;
+	width: 130px;
+}
+
+.habit-content {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.habit-name {
+	font-size: 16px;
+	color: #0066cc;
+}
+
+.habit-explanation {
+	margin-right: 10px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.habit-edit {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-grow: 1;
+}
+
+.edit-date-input {
+	width: 130px;
+	padding: 8px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.edit-text-input {
+	flex-grow: 1;
+	padding: 8px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.habit-edit button {
+	padding: 8px 15px;
+	background-color: #0066cc;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.habit-edit button:hover {
+	background-color: #0055b3;
+}
+
+.habit-status {
+	position: relative;
+	display: flex;
+	gap: 15px;
+	margin-left: auto;
+}
+
+.status-mark {
+	width: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #999;
+	cursor: pointer;
+}
+
+.status-popup {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px;
+	display: flex;
+	gap: 5px;
+	z-index: 10;
+}
+
+.status-popup button {
+	background: none;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.status-popup button:hover {
+	background-color: #f0f0f0;
+}
+
+.add-habit {
+	padding: 15px;
+	display: flex;
+	gap: 10px;
+	background-color: #f5f5f5;
+	align-items: center;
+}
+
+.add-habit .date-input {
+	width: 130px;
+	padding: 8px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.add-habit .text-input {
+	flex-grow: 1;
+	padding: 8px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.add-habit button {
+	padding: 8px 15px;
+	background-color: #0066cc;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.add-habit button:hover {
+	background-color: #0055b3;
+}
